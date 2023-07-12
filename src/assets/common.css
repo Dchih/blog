@@ -1,4 +1,9 @@
 html, body {
   margin: 0;
-  font-size: 15px;
+  height: 100%;
+}
+
+#app {
+  min-height: 100vh;
+  position: relative;
 }
