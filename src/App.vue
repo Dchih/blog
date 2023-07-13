@@ -21,6 +21,7 @@ footer {
   background-size: 100% 100%;
   position: absolute;
   bottom: 0;
+  object-fit: cover;
 }
 .custom-height {
   height: calc(100% - 430px);
