@@ -18,9 +18,12 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.DEPLOY_KEY }}
       
+    - name: Add server to known hosts
+      run: |
+        echo 'dragonballchih.top ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDd4hzQAYvhJxMxVUzILvqdcCuQjrlMmvZ0/+EL2UYPf18h4XlU4ZNC7Z+03WhaFCjl+GrW34ffdo30dwcU4wdDzl6OPtUoL1rbpEfyRlFP0NTZiN/RePNcApeEWv1VTHr/NUcHnk5jI2SoLNs9iMAP21cUUoB4sRmUap//e9m+SXQgWSy0PcwzOAgtMpBvThjd1wi+owwQGWx7xOoLjSu1NUItfztqTidlIPHfcXkP2j7n/suh5Z3OS0PfdCJcGbwUpm5i9PcXhqw+s8DFAlENE2T8NQky4UWVlVIarMeXRAHG/l0IUT7TRfT83cpsXYZlFeKY6W1h1QuNSiT0+6CsBmDaIskSx+WejT5pL/BQShGrLl+HAr67lWpAYo9mW93wOAplxDTvc2OUdrQR3/ycTlYATmh0NKRlywNm6JfjtBBxffkKKTaCcvt1RDqxXkyiqoLMuGHCKwHmzOxRrTlp9GDYZV1x03GZ3in/Qjyp6zAHQE69WDxiFpFee9OOgus=' >> ~/.ssh/known_hosts
+      
     - name: Deploy to server
       run: |
-        # ssh lighthouse@dragonballchih.top && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh 'cd /var/www/koaapp && git pull origin main && npm install && npm run build'
-        ssh -tt -o StrictHostKeyChecking=no lighthouse@dragonballchih.top "export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && cd /var/www/koaapp && git pull origin main && npm install && npm run build"
+        ssh -tt lighthouse@dragonballchih.top "export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && cd /var/www/koaapp && git pull origin main && npm install && npm run build"
 
 
