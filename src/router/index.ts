@@ -5,6 +5,7 @@ const Content = () => import('@/views/contents.vue')
 const BoringThings = () => import('@/components/boringThings/index.vue')
 const Reflections = () => import('@/components/reflections/index.vue')
 const Technics = () => import('@/components/technics/index.vue')
+const Economic = () => import('@/components/economic/index.vue')
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +31,10 @@ const router = createRouter({
           path: 'boring-things',
           component: BoringThings
         },
+        {
+          path: 'economic',
+          component: Economic
+        }
       ]
     }
   ]
