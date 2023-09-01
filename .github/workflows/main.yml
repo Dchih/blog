@@ -22,6 +22,19 @@ jobs:
     - name: Add server to known hosts
       run: |
         echo "dragonballchih.top $(ssh-keyscan dragonballchih.top)" >> ~/.ssh/known_hosts
+
+    - name: Use Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.17.1' # You can specify the version you want
+
+    - name: Echo Node and NPM versions
+      run: |
+        echo "Node Version:"
+        node --version
+
+        echo "NPM Version:"
+        npm --version
       
     - name: Deploy to server
       run: |
