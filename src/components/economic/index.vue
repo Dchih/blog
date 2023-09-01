@@ -1,5 +1,5 @@
 <template>
-  <div>认知世界的经济学,测试部署7: 部署文件夹添加权限</div>
+  <div>认知世界的经济学,测试部署8: 修改文件夹远程git地址</div>
 </template>
 
 <script setup lang="ts">
