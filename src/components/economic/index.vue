@@ -1,5 +1,5 @@
 <template>
-  <div>认知世界的经济学,测试部署10: 在服务器手动git pull</div>
+  <div>认知世界的经济学,测试部署11: 设置nodejs版本</div>
 </template>
 
 <script setup lang="ts">
