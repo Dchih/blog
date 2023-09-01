@@ -20,5 +20,7 @@ jobs:
       
     - name: Deploy to server
       run: |
-        ssh lighthouse@dragonballchih.top && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh 'cd /var/www/koaapp && git pull origin main && npm install && npm run build'
+        # ssh lighthouse@dragonballchih.top && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh 'cd /var/www/koaapp && git pull origin main && npm install && npm run build'
+        ssh -tt -o StrictHostKeyChecking=no lighthouse@dragonballchih.top "export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && cd /var/www/koaapp && git pull origin main && npm install && npm run build"
+
 
