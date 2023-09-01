@@ -1,5 +1,5 @@
 <template>
-  <div>认知世界的经济学,测试部署8: 修改文件夹远程git地址2</div>
+  <div>认知世界的经济学,测试部署9: github添加服务器公钥</div>
 </template>
 
 <script setup lang="ts">
