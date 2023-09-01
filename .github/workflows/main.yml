@@ -25,5 +25,5 @@ jobs:
       
     - name: Deploy to server
       run: |
-        ssh lighthouse@dragonballchih.top 'cd /var/www/koaapp && git pull origin main && npm install && npm run build'
+        ssh lighthouse@dragonballchih.top 'cd /var/www/koaapp && git pull origin main && /home/lighthouse/.nvm/versions/node/v18.17.1/bin/npm install && /home/lighthouse/.nvm/versions/node/v18.17.1/bin/npm run build'
 
