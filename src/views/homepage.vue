@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { RouterLink } from 'vue-router';
-import { night, daytime } from '@/public/variables/colorScheme';
+import { daytime } from '@/public/variables/colorScheme';
 onMounted(() => {
   document.body.style.background = daytime[2]
 })
