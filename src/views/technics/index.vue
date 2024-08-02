@@ -1,32 +1,11 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-// import MDPreview from "@/components/mdPreview/index.vue";
-import { html } from "../../assets/md/technics/document.md";
-const files = import.meta.glob("@/assets/md/**/*.md");
-const markdownHTML = ref([]);
 
-const regExp = /^<h1>(.+)<\/h1>/;
 
 const currentHTML = ref("");
 
-const switchArticle = (index) => {
-  currentHTML.value = markdownHTML.value[index].html;
-};
-
 onMounted(async () => {
-  for (const path in files) {
-    const module = await files[path]();
-    const html = module.html;
-    const header = html.match(regExp);
-
-    markdownHTML.value.push({
-      title: header ? header[1] : "",
-      html,
-    });
-  }
-  if (markdownHTML.value.length > 0) {
-    currentHTML.value = markdownHTML.value[0].html;
-  }
+  
 });
 </script>
 
@@ -34,18 +13,10 @@ onMounted(async () => {
   <div class="header">以后会在这里加些动效</div>
   <div class="wrap">
     <div class="content shadow">
-      <div v-html="currentHTML" v-highlight></div>
+      <div v-html="currentHTML"></div>
     </div>
     <div class="menu">
-      <ul>
-        <li
-          v-for="(markdown, index) in markdownHTML"
-          :title="markdown.title"
-          @click="switchArticle(index)"
-        >
-          {{ index + 1 }}，{{ markdown.title }}
-        </li>
-      </ul>
+      
     </div>
   </div>
 </template>
