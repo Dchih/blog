@@ -10,7 +10,7 @@ function drawPlumBlossom() {
   ctx.globalAlpha = 0.5;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  drawBranchSlowly(ctx, { x: 0, y: window.innerHeight * 3 / 4 }, 135, 15, 200);
+  drawBranchSlowly(ctx, { x: 0, y: window.innerHeight * 7 / 8 }, 135, 15, 200);
 }
 onMounted(() => {
   drawPlumBlossom();
