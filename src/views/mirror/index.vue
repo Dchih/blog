@@ -10,7 +10,6 @@ navigator.mediaDevices
     document.getElementById('capture')!.addEventListener('click', function() {
       var canvas = document.getElementById('canvas') as HTMLCanvasElement;
       var context = canvas!.getContext('2d');
-      // 将当前视频帧绘制到 canvas 上，实现拍照功能
       context!.drawImage(video, 0, 0, canvas.width, canvas.height);
     });
   })
