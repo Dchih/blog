@@ -19,10 +19,12 @@ navigator.mediaDevices
 </script>
 
 <template>
-  <video></video>
-  <div id="capture">拍照</div>
-  <canvas id="canvas"></canvas>
-  <input type="file" accept="image/*">
+  <div class="delete-overflow">
+    <video></video>
+    <div id="capture">拍照</div>
+    <canvas id="canvas"></canvas>
+    <input type="file" accept="image/*">
+  </div>
 </template>
 
 <style lang="css">
@@ -34,5 +36,9 @@ video {
 canvas {
   margin-top: 20px;
   width: 500px;
+}
+
+.delete-overflow {
+  overflow: hidden;
 }
 </style>
