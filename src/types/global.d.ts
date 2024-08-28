@@ -37,3 +37,5 @@ declare module "*.md" {
     VueComponentWith,
   };
 }
+
+declare const __APP_VERSION__: string

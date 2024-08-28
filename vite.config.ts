@@ -7,6 +7,9 @@ import UnoCSS from 'unocss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  define: {
+    __APP_VERSION__: "v1.0.0"
+  },
   plugins: [vue(), vueJsx(), UnoCSS()],
   resolve: {
     alias: {

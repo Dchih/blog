@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 navigator.mediaDevices
   .getUserMedia({video: true})
   .then(function (stream) {
@@ -16,6 +17,15 @@ navigator.mediaDevices
   .catch(function (err) {
     alert(err);
   });
+
+  onMounted(() => {
+    const version = localStorage.getItem("version");
+    const currentVersion = __APP_VERSION__;
+    if (version !== currentVersion) {
+      localStorage.setItem("version", currentVersion);
+      location.reload();
+    }
+  })
 </script>
 
 <template>
