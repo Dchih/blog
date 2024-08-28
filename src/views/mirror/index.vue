@@ -31,9 +31,9 @@ import { onMounted } from 'vue';
 
 <template>
   <div class="delete-overflow">
-    <video></video>
+    <!-- <video></video>
     <div id="capture">拍照</div>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas"></canvas>  -->
     <input type="file" accept="image/*">
     <input type="file" >
   </div>
