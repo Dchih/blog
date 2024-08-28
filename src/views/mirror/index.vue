@@ -15,7 +15,6 @@ navigator.mediaDevices
     });
   })
   .catch(function (err) {
-    /* 处理 error */
     alert(err);
   });
 </script>
