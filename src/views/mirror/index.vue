@@ -37,9 +37,9 @@ const router = useRouter();
 <template>
   <div class="delete-overflow">
     <button @click="routeTo">跳转</button>
-    <video></video>
+    <!-- <video></video>
     <div id="capture">拍照</div>
-    <canvas id="canvas"></canvas> 
+    <canvas id="canvas"></canvas>  -->
     <input type="file" accept="image/*">
     <input type="file" >
   </div>
