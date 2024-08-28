@@ -2,7 +2,7 @@
 navigator.mediaDevices
   .getUserMedia({video: true})
   .then(function (stream) {
-    const video = document.querySelector('video')!;
+    var video = document.querySelector('video')!;
     video.srcObject = stream;
     video.onloadedmetadata = function(e) {
       video.play();
@@ -24,6 +24,7 @@ navigator.mediaDevices
   <video></video>
   <div id="capture">拍照</div>
   <canvas id="canvas"></canvas>
+  <input type="file" accept="image/*">
 </template>
 
 <style lang="css">
