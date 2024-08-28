@@ -24,6 +24,7 @@ navigator.mediaDevices
     <div id="capture">拍照</div>
     <canvas id="canvas"></canvas>
     <input type="file" accept="image/*">
+    <input type="file" >
   </div>
 </template>
 
