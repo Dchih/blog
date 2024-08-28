@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 // navigator.mediaDevices
 //   .getUserMedia({video: true})
 //   .then(function (stream) {
@@ -27,10 +29,14 @@ import { onMounted } from 'vue';
       location.reload();
     }
   })
+  const routeTo = () => {
+    router.push('/');
+  }
 </script>
 
 <template>
   <div class="delete-overflow">
+    <button @click="routeTo">跳转</button>
     <video></video>
     <div id="capture">拍照</div>
     <canvas id="canvas"></canvas> 

@@ -29,6 +29,7 @@ onMounted(() => {
         <p>这里会有一些<router-link to="/content/technics">技术分享</router-link>。</p>
         <p>偶尔会有几篇<router-link to="/content/reflections">随想</router-link>。</p>
         <p>或许，也会记点<router-link to="content/boring-things">无聊的事</router-link>。</p>
+        <p><router-link to="/content/mirror">希望你能在这里找到一些有用的东西。</router-link></p>
       </section>
     </div>
     <footer class="h-30vh w-full slow-to-top"></footer>
