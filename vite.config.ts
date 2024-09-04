@@ -5,10 +5,17 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import UnoCSS from 'unocss/vite'
 
+import fs from 'fs'
+import dayjs from 'dayjs'
+
+const VERSION_TIME = dayjs().format('YYYY-MM-DD HH:mm:ss')
+const str_ver = JSON.stringify({ VERSION_TIME })!
+fs.writeFileSync('./public/version.json', str_ver)
+
 // https://vitejs.dev/config/
 export default defineConfig({
   define: {
-    __APP_VERSION__: "20240828"
+    'import.meta.env.VERSION_TIME': JSON.stringify(VERSION_TIME)
   },
   plugins: [vue(), vueJsx(), UnoCSS()],
   resolve: {
