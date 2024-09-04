@@ -80,7 +80,7 @@ onMounted(() => {
     width="500"
     :before-close="handleClose"
   >
-    <span>{{ count }}秒后自动更新222</span>
+    <span>{{ count }}秒后自动更新444</span>
     <template #footer>
       <div class="dialog-footer">
         <el-button type="primary" @click="manualUpdateVersion"
