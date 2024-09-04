@@ -8,7 +8,7 @@ const handleClose = () => {
   emit("update:close", false);
 };
 
-let innerCheck: Ref<NodeJS.Timeout | null> = ref(null);
+let innerCheck: Ref<any> = ref(null);
 const startCheck = () => {
   if (!innerCheck.value) {
     innerCheck.value = setInterval(() => {
@@ -54,7 +54,7 @@ const count = ref(5);
 const updateVersion = () => {
   count.value = 5;
   dialogVisible.value = true;
-  let timer: NodeJS.Timeout | null = setInterval(() => {
+  let timer: any = setInterval(() => {
     count.value--;
     if (count.value < 1) {
       clearInterval(timer!);
@@ -80,7 +80,7 @@ onMounted(() => {
     width="500"
     :before-close="handleClose"
   >
-    <span>{{ count }}秒后自动更新111</span>
+    <span>{{ count }}秒后自动更新222</span>
     <template #footer>
       <div class="dialog-footer">
         <el-button type="primary" @click="manualUpdateVersion"
