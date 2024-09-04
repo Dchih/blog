@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { checkVersion, updateVersion } from "@/utils/update";
 
 const Home = () => import("@/views/homepage.vue");
 const Content = () => import("@/views/contents.vue");
@@ -43,6 +44,11 @@ const router = createRouter({
       ]
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  checkVersion()
+  next()
 })
 
 export default router;

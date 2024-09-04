@@ -35,10 +35,8 @@ const checkVersion = async () => {
     }
   );
   const data = await publicVersion.json()
-  const NEW_VERSION_TIME = data.VERSION_TIME; // json保存的时间
-  const VERSION_TIME = import.meta.env.VERSION_TIME; // vite.config.ts 中的时间
-
-  console.log(NEW_VERSION_TIME, "import.meta.env.VERSION_TIME: ", VERSION_TIME);
+  const NEW_VERSION_TIME = data.VERSION_TIME;
+  const VERSION_TIME = import.meta.env.VERSION_TIME;
 
   if (import.meta.env.DEV) {
     endCheck();
@@ -50,14 +48,14 @@ const checkVersion = async () => {
   }
 };
 
-const count = ref(10);
+const count = ref(30);
 const updateVersion = () => {
-  count.value = 10;
+  count.value = 30;
   dialogVisible.value = true;
-  let timer: any = setInterval(() => {
+  let timer: any = setTimeout(() => {
     count.value--;
     if (count.value < 1) {
-      clearInterval(timer!);
+      clearTimeout(timer!);
       timer = null;
       location.reload();
     }

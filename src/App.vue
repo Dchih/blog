@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import UpdatePage from './views/mirror/updatePage/index.vue';
+// import UpdatePage from './views/mirror/updatePage/index.vue';
 </script>
 
 <template>
-  <UpdatePage></UpdatePage>
+  <!-- <UpdatePage></UpdatePage> -->
   <RouterView></RouterView>
 </template>
 

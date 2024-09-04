@@ -20,7 +20,7 @@ onMounted(() => {
 
 <template>
   <div class="home-page" >
-    <canvas id="canvas" style="position: absolute; z-index: 0" ref="canvas"></canvas>
+    <canvas id="canvas" style="position: absolute; z-index: 0; pointer-events: none;" ref="canvas"></canvas>
     <div class="flex justify-center pt-20vh custom-height fade-in">
       <section class="text-lg text-white">
         <p class="mask"></p>
