@@ -21,7 +21,9 @@ export const checkVersion = async () => {
     // updateVersion()
     console.log("reload111")
     ElMessage.warning("检测到新版本，正在更新...")
-    location.reload()
+    setTimeout(() => {
+      location.reload()
+    }, 3000)
   }
 }
 
