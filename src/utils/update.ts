@@ -17,7 +17,7 @@ export const checkVersion = async () => {
   }
   if (NEW_VERSION_TIME && new Date(NEW_VERSION_TIME) > new Date(VERSION_TIME)) {
     // updateVersion()
-    console.log("有新版本")
+    console.log("reload")
     location.reload()
   }
 }
