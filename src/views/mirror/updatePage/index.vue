@@ -13,7 +13,7 @@ const startCheck = () => {
   if (!innerCheck.value) {
     innerCheck.value = setInterval(() => {
       checkVersion();
-    }, 5000);
+    }, 15000);
   }
 };
 
@@ -50,9 +50,9 @@ const checkVersion = async () => {
   }
 };
 
-const count = ref(5);
+const count = ref(10);
 const updateVersion = () => {
-  count.value = 5;
+  count.value = 10;
   dialogVisible.value = true;
   let timer: any = setInterval(() => {
     count.value--;
@@ -80,7 +80,7 @@ onMounted(() => {
     width="500"
     :before-close="handleClose"
   >
-    <span>{{ count }}秒后自动更新444</span>
+    <span>检测到新版本，{{ count }}秒后自动更新444</span>
     <template #footer>
       <div class="dialog-footer">
         <el-button type="primary" @click="manualUpdateVersion"
