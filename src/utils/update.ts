@@ -23,7 +23,7 @@ export const checkVersion = async () => {
     ElMessage.warning("检测到新版本，正在更新...")
     setTimeout(() => {
       location.reload()
-    }, 3000)
+    }, 4000)
   }
 }
 
