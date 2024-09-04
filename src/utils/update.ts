@@ -1,3 +1,5 @@
+import { ElMessage } from "element-plus"
+
 export const checkVersion = async () => {
   console.log("进入checkVersion")
   // 对比 import.meta.env.VERSION_TIME 与 public/VERSION_TIME.json.data
@@ -17,7 +19,8 @@ export const checkVersion = async () => {
   }
   if (NEW_VERSION_TIME && new Date(NEW_VERSION_TIME) > new Date(VERSION_TIME)) {
     // updateVersion()
-    console.log("reload")
+    console.log("reload111")
+    ElMessage.warning("检测到新版本，正在更新...")
     location.reload()
   }
 }

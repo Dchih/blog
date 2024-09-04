@@ -78,7 +78,7 @@ onMounted(() => {
     width="500"
     :before-close="handleClose"
   >
-    <span>检测到新版本：为保证数据一致性，{{ count }}秒后将自动更新ceshi</span>
+    <span>检测到新版本：为保证数据一致性，{{ count }}秒后将自动更新</span>
     <template #footer>
       <div class="dialog-footer">
         <el-button type="primary" @click="manualUpdateVersion">
