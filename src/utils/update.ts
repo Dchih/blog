@@ -1,4 +1,5 @@
 export const checkVersion = async () => {
+  console.log("进入checkVersion")
   // 对比 import.meta.env.VERSION_TIME 与 public/VERSION_TIME.json.data
   const publicVersion = await fetch(location.origin + `/version.json?t=` + Date.now(), {
     headers: {
@@ -16,6 +17,7 @@ export const checkVersion = async () => {
   }
   if (NEW_VERSION_TIME && new Date(NEW_VERSION_TIME) > new Date(VERSION_TIME)) {
     // updateVersion()
+    console.log("有新版本")
     location.reload()
   }
 }
