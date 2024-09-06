@@ -40,6 +40,10 @@ const router = createRouter({
         {
           path: 'mirror',
           component: Mirror
+        },
+        {
+          path: 'h5',
+          component: () => import("@/views/h5/index.vue")
         }
       ]
     }

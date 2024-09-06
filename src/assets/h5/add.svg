@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.298039 0 0 0 0 0.564706 0 0 0 0 0.960784 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="住户管理-楼栋" transform="translate(-27.000000, -119.000000)">
+            <g id="编组" transform="translate(27.000000, 117.000000)" filter="url(#filter-1)">
+                <g transform="translate(0.000000, 2.000000)">
+                    <path d="M9.00067978,0 C4.05014641,0 0,4.05032551 0,8.99905874 C0,13.9497791 4.05017255,18 9.00067978,18 C13.9499059,18 18,13.9497791 18,8.99905874 C18,4.05035167 13.949932,0 9.00067978,0 M13.5002876,9.89955814 L9.89986405,9.89955814 L9.89986405,13.5007975 L8.10024055,13.5007975 L8.10024055,9.89955814 L4.49971243,9.89955814 L4.49971243,8.10054647 L8.10024055,8.10054647 L8.10024055,4.4991764 L9.89986405,4.4991764 L9.89986405,8.10054647 L13.5002876,8.10054647 L13.5002876,9.89955814 Z" id="形状" fill="#000000" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

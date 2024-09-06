@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="住户管理-楼栋" transform="translate(-24.000000, -237.000000)">
+            <g id="编组-2" transform="translate(12.000000, 212.000000)">
+                <g id="直线" transform="translate(0.000000, 1.000000)">
+                    <g id="编组-3" transform="translate(12.000000, 24.000000)">
+                        <circle id="椭圆形" stroke="#D7E2EC" stroke-width="1.2" fill="#E4ECF6" cx="20" cy="20" r="19.4"></circle>
+                        <g id="编组" transform="translate(11.764706, 10.588235)" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.9108">
+                            <polyline id="路径" points="6.9 3.65294118 2.84117647 6.49411765 2.84117647 16.2352941"></polyline>
+                            <polygon id="路径" fill="#66B6FF" points="6.9 0 10.9588235 2.84117647 10.9588235 8.11764706 13.8 10.1470588 13.8 16.2352941 6.9 16.2352941"></polygon>
+                            <line x1="0" y1="16.2352941" x2="16.2352941" y2="16.2352941" id="路径"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
