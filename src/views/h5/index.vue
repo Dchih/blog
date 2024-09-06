@@ -62,7 +62,7 @@ const addUser = () => {
       <img src="@/assets/h5/back.svg" alt="返回">
       <span>住户管理</span>
     </header>
-    <div class="btns-group">
+    <!-- <div class="btns-group">
       <van-button class="btn" @click="addUser">
         <span class="btn-display">
           <img src="@/assets/h5/add.svg" alt="">
@@ -111,7 +111,7 @@ const addUser = () => {
         :max-date="maxDate"
         @confirm="onConfirm"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 
