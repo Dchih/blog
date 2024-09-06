@@ -40,7 +40,7 @@ const onConfirm = (value: string) => {
   if(regExp.test(str)) {
     console.log('匹配成功')
   } else {
-    console.log('匹配失败')
+    console.log('匹配失败!')
   }
 };
 
