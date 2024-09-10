@@ -51,7 +51,7 @@ const addUser = () => {
   new Date("2023-03-03")
   showDialog({
     title: '时间是否正确',
-    message: '请确认时间是否正确: ' + platform,
+    message: '请确认时间是否正确:' + platform,
   }).then(() => {
     // on close
   });
