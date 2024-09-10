@@ -60,9 +60,6 @@ const addUser = () => {
 function detectPlatform() {
     const ua = navigator.userAgent.toLowerCase();
     if (/micromessenger/.test(ua)) {
-        if (typeof (window as any).wx !== 'undefined' && (window as any).wx.miniProgram) {
-            return 'WeChatMiniProgram';
-        }
         return 'WeChat';
     }
     if (/android/.test(ua)) {
@@ -77,7 +74,7 @@ function detectPlatform() {
 
 <template>
   <div class="page-wrap">
-    <header v-if="platform !== 'WeChatMiniProgram' || 'WeChat'">
+    <header v-if="platform !== 'WeChat'">
       <img src="@/assets/h5/back.svg" alt="返回">
       <span>住户管理</span>
     </header>
