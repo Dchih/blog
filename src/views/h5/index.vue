@@ -54,11 +54,29 @@ const addUser = () => {
     // on close
   });
 };
+
+function detectPlatform() {
+    const ua = navigator.userAgent.toLowerCase();
+    if (/micromessenger/.test(ua)) {
+        if (typeof wx !== 'undefined' && wx.miniProgram) {
+            return 'WeChatMiniProgram';
+        }
+        return 'WeChat';
+    }
+    if (/android/.test(ua)) {
+        return 'Android';
+    }
+    if (/iphone|ipad|ipod/.test(ua)) {
+        return 'iOS';
+    }
+    return 'Unknown Platform';
+}
+const platform = detectPlatform();
 </script>
 
 <template>
   <div class="page-wrap">
-    <header>
+    <header v-if="platform !== 'WeChatMiniProgram'">
       <img src="@/assets/h5/back.svg" alt="返回">
       <span>住户管理</span>
     </header>
