@@ -58,7 +58,7 @@ const addUser = () => {
 function detectPlatform() {
     const ua = navigator.userAgent.toLowerCase();
     if (/micromessenger/.test(ua)) {
-        if (typeof wx !== 'undefined' && wx.miniProgram) {
+        if (typeof (window as any).wx !== 'undefined' && (window as any).wx.miniProgram) {
             return 'WeChatMiniProgram';
         }
         return 'WeChat';

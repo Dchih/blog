@@ -38,4 +38,10 @@ declare module "*.md" {
   };
 }
 
+declare global {
+  interface Window {
+    wx: any;
+  }
+}
+
 declare const __APP_VERSION__: string
