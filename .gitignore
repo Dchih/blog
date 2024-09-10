@@ -30,5 +30,5 @@ coverage
 *.tsbuildinfo
 
 vite.config.ts.timestamp-*.mjs
-version.json
+public/version.json
 /dist/index.html
