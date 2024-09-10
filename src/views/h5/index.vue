@@ -77,7 +77,7 @@ function detectPlatform() {
 
 <template>
   <div class="page-wrap">
-    <header v-if="platform !== 'WeChatMiniProgram'">
+    <header v-if="platform !== 'WeChatMiniProgram' || 'WeChat'">
       <img src="@/assets/h5/back.svg" alt="返回">
       <span>住户管理</span>
     </header>
