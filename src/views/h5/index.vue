@@ -44,12 +44,14 @@ const onConfirm = (value: string) => {
   }
 };
 
+const platform = detectPlatform();
+
 const addUser = () => {
   console.log('add user');
   new Date("2023-03-03")
   showDialog({
     title: '时间是否正确',
-    message: '请确认时间是否正确',
+    message: '请确认时间是否正确: ' + platform,
   }).then(() => {
     // on close
   });
@@ -71,7 +73,6 @@ function detectPlatform() {
     }
     return 'Unknown Platform';
 }
-const platform = detectPlatform();
 </script>
 
 <template>
