@@ -60,5 +60,6 @@ a {
   margin: 0 4px;
   border-radius: 4px;
   cursor: pointer;
+  font-style: italic;
 }
 </style>
