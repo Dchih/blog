@@ -21,18 +21,16 @@ onMounted(() => {
 <template>
   <div class="home-page" >
     <canvas id="canvas" style="position: absolute; z-index: 0; pointer-events: none;" ref="canvas"></canvas>
-    <div class="flex justify-center pt-20vh custom-height fade-in">
-      <section class="text-lg text-white">
-        <p class="mask"></p>
-        <p>你好，</p>
-        <p>很高兴认识你。</p>
-        <p>这里会有一些<router-link to="/content/technics">技术分享</router-link>。</p>
-        <p>偶尔会有几篇<router-link to="/content/reflections">随想</router-link>。</p>
-        <p>或许，也会记点<router-link to="content/boring-things">无聊的事</router-link>。</p>
+    <div class="flex justify-end pt-5vh pr-3vw custom-height fade-in">
+      <section class="text-lg text-white flex flex-col gap-10">
+        <router-link to="/content/technics">技术分享</router-link>
+        <router-link to="/content/reflections">随想</router-link>
+        <router-link to="content/boring-things">无聊的事</router-link>
       </section>
     </div>
     <footer class="h-30vh w-full slow-to-top"></footer>
   </div>
+  <div style="background: #273036; color: #efefef;" class="text-center fixed bottom-0 w-full">备案号：粤ICP备2023083802号-1</div>
 </template>
 
 <style scoped>
@@ -41,7 +39,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   object-fit: cover;
   background-position: center;
   opacity: 1;
@@ -52,13 +50,12 @@ footer {
   padding-bottom: 30vh;
 }
 a {
-  text-decoration: none;
-  color: #212121;
+  text-decoration: underline;
+  color: #fff;
   display: inline-block;
-  padding: 0 10px;
   margin: 0 4px;
-  background-color: #efefef;
   border-radius: 4px;
   cursor: pointer;
+  font-style: italic;
 }
 </style>
