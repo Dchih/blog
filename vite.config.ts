@@ -14,7 +14,7 @@ fs.writeFileSync('./public/version.json', str_ver)
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: "./",
+  // base: "/h5/",
   define: {
     'import.meta.env.VERSION_TIME': JSON.stringify(VERSION_TIME)
   },
