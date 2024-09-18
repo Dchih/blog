@@ -12,6 +12,10 @@ function drawPlumBlossom() {
   canvas.height = window.innerHeight;
   drawBranchSlowly(ctx, { x: 0, y: window.innerHeight * 7 / 8 }, 135, 15, 200);
 }
+
+const goSBAddress = () => {
+  window.open("http://beian.miit.gov.cn/");
+}
 onMounted(() => {
   drawPlumBlossom();
   document.body.style.background = daytime[2]
@@ -30,7 +34,7 @@ onMounted(() => {
     </div>
     <footer class="h-30vh w-full slow-to-top"></footer>
   </div>
-  <div style="background: #273036; color: #efefef;" class="text-center fixed bottom-0 w-full">备案号：粤ICP备2023083802号-1</div>
+  <div style="background: #273036; color: #efefef;" class="text-center fixed bottom-0 w-full cursor-pointer" @click="goSBAddress">备案号：粤ICP备2023083802号-1</div>
 </template>
 
 <style scoped>
@@ -56,6 +60,5 @@ a {
   margin: 0 4px;
   border-radius: 4px;
   cursor: pointer;
-  font-style: italic;
 }
 </style>
