@@ -6,6 +6,7 @@ defineOptions({
 
 <template>
   <div>
+    添加一张图片
     <img src="@/assets/img/login.png" alt="boringThings" class="boringThings">
   </div>
 </template>
