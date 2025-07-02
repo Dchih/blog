@@ -1,9 +1,12 @@
 <script setup lang="ts">
+defineOptions({
+  name: 'BoringThings'
+})
 </script>
 
 <template>
   <div>
-    boringthings
+    <img src="@/assets/img/login.png" alt="boringThings" class="boringThings">
   </div>
 </template>
 
