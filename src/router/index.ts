@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { checkVersion, updateVersion } from "@/utils/update";
 
-const Home = () => import("@/views/homepage.vue");
+const Home = () => import("@/views/HomePage.vue");
 const Content = () => import("@/views/contents.vue");
 const BoringThings = () => import("@/views/boringThings/index.vue");
 const Reflections = () => import("@/views/reflections/index.vue");
